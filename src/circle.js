@@ -1,6 +1,10 @@
 (function(exports) {
   function Notes() {
-    this.list = [];
+    this.noteList = [];
+  };
+
+  function addNote(note) {
+    this.noteList << note
   };
 
   exports.Notes = Notes;
