@@ -2,11 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
 
-    <script type="text/javascript" src="./src/circle.js"></script>
-    <script type="text/javascript" src="./spec/circleTest.js"></script>
+    <script type="text/javascript" src="./src/notes.js"></script>
+    <script type="text/javascript" src="./src/notesController.js"></script>
+    <script type="text/javascript" src="./spec/notesTest.js"></script>
 
+    <h1>Notes-App</h1>
   </head>
   <body>
+
+      <form>
+        notes:<br>
+        <input id="note-input" type="text" name="notes"><br>
+        <input id="note-button" onclick=getInput(); type="button" value="Submit">
+      </form>
+
+      <span id="printedNotes">Notes: </span>
 
   </body>
 </html>
